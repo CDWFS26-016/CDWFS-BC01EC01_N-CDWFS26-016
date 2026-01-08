@@ -181,11 +181,8 @@ CDWFS_BC01EC01_N_CDWFS26_016/
 ├── 🎨 CSS/
 │   ├── style.css            (440+ lines - styles globaux)
 │   ├── prestation.css       (Styles page prestation, table tarifs)
-│   ├── carousel.css         (Carousel + vidéo)
-│   └── web-components/
-│       ├── header-component.css
-│       ├── footer-component.css
-│       └── review-component.css
+│   └── carousel.css         (Carousel + vidéo)
+
 │
 ├── ⚙️ JavaScript/
 │   ├── script.js            (Validation formulaires contact)
@@ -207,15 +204,14 @@ CDWFS_BC01EC01_N_CDWFS26_016/
 │
 ├── 🖼️ Images/
 │   ├── logo.svg             (Logo vectoriel coloré)
-│   ├── logo.png, logo-old.jpg
+│   ├── logo-old.jpg
 │   ├── exemple01.avif       (Services - Rénovation)
 │   ├── exemple02.avif       (Services - Peinture)
 │   ├── exemple03.avif       (Services - Isolation)
-│   ├── img01.avif           (Services - Enduits)
-│   ├── img02.jpg, img03.avif (Carousel)
-│   ├── exemple04.jpg        (Carousel)
-│   ├── imgbanner.jpg        (Poster vidéo)
-│   └── og-image.jpg
+│   ├── exemple04.jpg        (Services - Enduits)
+│   ├── img01.avif
+│   ├── img02.jpg, img03.avif
+│   └── imgbanner.jpg        (Poster vidéo)
 │
 ├── 🎬 Video/
 │   └── vid.mp4              (Vidéo présentation)
@@ -232,7 +228,7 @@ CDWFS_BC01EC01_N_CDWFS26_016/
 
 #### 1️⃣ **index.html** - Homepage
 - Hero section avec CTA
-- Grille 4 services avec images AVIF
+- Grille 4 services avec images AVIF (pas toutes)
 - Section tarifs (4 cartes)
 - CTA "Études-Conseils-Devis-Expertise"
 - Section avis/contact fusionnée (2 blocs 50%)
@@ -464,7 +460,7 @@ Mobile:   480px    (boutons 100%, vidéo 250px)
 
 ---
 
-## 🚀 Installation & Déploiement
+## 🚀 Installation
 
 ### Installation locale
 
@@ -473,42 +469,9 @@ Mobile:   480px    (boutons 100%, vidéo 250px)
 git clone [repo]
 cd CDWFS_BC01EC01_N_CDWFS26_016
 
-# 2. Serveur local (Python)
-python -m http.server 8000
-
-# 3. Accéder
-http://localhost:8000
+# 2. Accéder
+"Juste lancer index.html"
 ```
-
-### Déploiement
-
-**Hébergement recommandé:**
-- Netlify / Vercel (déploiement simplifié)
-- OVH / Gandi (hébergement traditionnel)
-- Bluehost (WordPress-friendly)
-
-**Domaine:**
-- Pointer DNS vers l'hébergeur
-- SSL/HTTPS obligatoire
-- Certificat auto (Let's Encrypt gratuit)
-
----
-
-## 📝 Contenu & Informations Entreprise
-
-**Magic Home Service (MHS)**
-- **Domaine:** devis-reno-concept.fr
-- **Tagline:** Études-Conseils-Devis-Expertise
-- **Services:** 
-  - Rénovation Services (13€ HT/m²)
-  - Peinture Intérieure (15€ HT/m²)
-  - Isolation Thermique (89€ HT/m²)
-  - Enduits de Qualité (14€-20€ HT/m²)
-- **Zone:** Eure-et-Loir + départements voisins
-- **Contact:**
-  - Tel: +33 6 12 34 56 78
-  - Email: contact@devis-reno-concept.fr
-  - Instagram: @airless_painter
 
 ---
 
@@ -554,7 +517,7 @@ http://localhost:8000
 - ✅ SEO optimisé (canonical, OG, JSON-LD)
 - ✅ Web Components réutilisables
 - ✅ Formulaires validés
-- ✅ Images optimisées (AVIF)
+- ✅ Images optimisées (AVIF) (pas toutes)
 - ✅ Aucune dépendance externe
 - ✅ Code commenté en français
 - ✅ .gitignore configuré
@@ -571,6 +534,4 @@ Pour toute question ou modification du projet **CDWFS26-016**, consulter la docu
 ---
 
 **Dernière mise à jour:** 8 janvier 2026  
-**Projet:** CDWFS26-016  
-**Client:** Magic Home Service
 
