@@ -50,7 +50,7 @@ class FooterComponent extends HTMLElement {
         template.innerHTML = `
             <footer role="contentinfo">
                 <div class="container">
-                    <p>&copy; 2026 RT Rénov - 123 Rue de la Rénovation, 75000 Paris</p>
+                    <p>Magic Home Service © 2026 - Eure-et-Loir</p>
                     <a href="#main-content" class="back-to-top" id="back-to-top" title="Revenir au début de la page">Retour en haut ↑</a>
                 </div>
             </footer>
