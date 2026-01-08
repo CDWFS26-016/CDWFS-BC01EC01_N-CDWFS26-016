@@ -479,7 +479,7 @@ cd CDWFS_BC01EC01_N_CDWFS26_016
 
 | Fichier | Utilité |
 |---------|---------|
-| `style.css` | Styles globaux (440+ lignes) |
+| `style.css` | Styles globaux |
 | `header-component.js` | Navigation sticky + menu burger |
 | `review-component.js` | Système complet avis |
 | `carousel.js` | Carrousel custom |
@@ -530,6 +530,17 @@ cd CDWFS_BC01EC01_N_CDWFS26_016
 ## 📧 Support & Maintenance
 
 Pour toute question ou modification du projet **CDWFS26-016**, consulter la documentation technique dans les commentaires du code (francais).
+
+---
+
+## Notes PWA
+
+Quelques fichiers de tentatives de mise en place PWA sont intégrés et non référencés dans ce document
+Leur mise en place était un test sur quelques minutes uniquement
+La liste est :
+- `manifest.json`
+- `service-worker.js`
+- `js/pwa-install.js`
 
 ---
 
