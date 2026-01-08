@@ -52,6 +52,9 @@ class FooterComponent extends HTMLElement {
                 <div class="container">
                     <p>Magic Home Service © 2026 - Eure-et-Loir</p>
                     <a href="#main-content" class="back-to-top" id="back-to-top" title="Revenir au début de la page">Retour en haut ↑</a>
+                    <br/>
+                    <br/>
+                    <button id="install-app-btn" class="install-btn" title="Installer l'app sur votre appareil">📲 Installer l'app</button>
                 </div>
             </footer>
         `;
