@@ -12,7 +12,7 @@
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    color: #2c3e50;
+    color: var(--primary-color);
 }
 
 /* Conteneur du carousel */
@@ -20,9 +20,9 @@
     position: relative;
     max-width: 800px;
     margin: 0 auto 2rem;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
 /* Piste du carousel */
@@ -38,7 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f4f4f4;
+    background: var(--bg-light);
 }
 
 /* Image du carousel */
@@ -69,7 +69,7 @@
 }
 
 .carousel-button:focus-visible {
-    outline: 2px solid #8b5cf6;
+    outline: 2px solid var(--accent-color);
     outline-offset: 2px;
 }
 
@@ -93,14 +93,14 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #ddd;
+    background: var(--border-light);
     border: none;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 .indicator.active {
-    background: #8b5cf6;
+    background: var(--accent-color);
 }
 
 .indicator:hover {
@@ -108,7 +108,7 @@
 }
 
 .indicator:focus-visible {
-    outline: 2px solid #8b5cf6;
+    outline: 2px solid var(--accent-color);
     outline-offset: 2px;
 }
 
@@ -125,16 +125,16 @@
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    color: #2c3e50;
+    color: var(--primary-color);
 }
 
 /* Conteneur de la vidéo */
 .video-container {
     max-width: 900px;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
     background: black;
 }
 
