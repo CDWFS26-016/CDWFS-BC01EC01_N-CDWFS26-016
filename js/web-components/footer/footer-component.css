@@ -26,6 +26,39 @@ footer p {
 }
 
 /* ===========================
+   BOUTON D'INSTALLATION PWA
+   =========================== */
+
+/* Bouton d'installation - masqué par défaut */
+/* .install-btn {
+    background: var(--accent-color, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--border-radius, 8px);
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 0 0.5rem 1rem;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.install-btn:hover {
+    background: #a78eff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(139, 92, 246, 0.3);
+}
+
+.install-btn:active {
+    transform: translateY(0);
+}
+
+.install-btn:focus-visible {
+    outline: 2px solid #8b5cf6;
+    outline-offset: 2px;
+} */
+
+/* ===========================
    BOUTON "RETOUR EN HAUT"
    =========================== */
 
