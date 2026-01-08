@@ -1,0 +1,197 @@
+/* ===========================
+   STYLES DU CAROUSEL
+   Carrousel custom des réalisations
+   =========================== */
+
+.carousel-section {
+    padding: 3rem 0;
+    background: white;
+}
+
+.carousel-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+/* Conteneur du carousel */
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Piste du carousel */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+/* Slide individuel */
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+}
+
+/* Image du carousel */
+.carousel-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Boutons de navigation */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 10;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button:focus-visible {
+    outline: 2px solid #8b5cf6;
+    outline-offset: 2px;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+/* Indicateurs (points) */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.indicator.active {
+    background: #8b5cf6;
+}
+
+.indicator:hover {
+    background: #b59eff;
+}
+
+.indicator:focus-visible {
+    outline: 2px solid #8b5cf6;
+    outline-offset: 2px;
+}
+
+/* ===========================
+   STYLES DE LA VIDÉO
+   Section vidéo avec crop en hauteur
+   =========================== */
+
+.video-section {
+    padding: 3rem 0;
+}
+
+.video-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+/* Conteneur de la vidéo */
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: black;
+}
+
+/* Vidéo - Centrer et crop en hauteur */
+.showcase-video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 768px) {
+    .carousel-section h2,
+    .video-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-image {
+        height: 280px;
+    }
+
+    .carousel-button {
+        padding: 0.75rem;
+        font-size: 1.2rem;
+    }
+
+    .showcase-video {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-image {
+        height: 220px;
+    }
+
+    .carousel-button {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .carousel-indicators {
+        padding: 0.75rem 0;
+        gap: 0.35rem;
+    }
+
+    .indicator {
+        width: 10px;
+        height: 10px;
+    }
+
+    .showcase-video {
+        height: 250px;
+    }
+}

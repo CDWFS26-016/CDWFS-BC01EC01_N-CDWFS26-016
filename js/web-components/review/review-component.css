@@ -1,0 +1,317 @@
+/* ===========================
+   STYLES DU COMPOSANT REVIEW
+   Formulaire d'avis et liste des avis
+   =========================== */
+
+/* ===========================
+   STYLES GÉNÉRIQUES DU FORMULAIRE
+   Reprises du style.css pour le Shadow DOM
+   =========================== */
+
+.full-width-percentage {
+    width: 100%;
+}
+
+/* Groupe de formulaire */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/* Labels */
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+/* Indicateur de champ requis */
+.required {
+    color: #e74c3c;
+}
+
+/* Champs de formulaire */
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus des champs */
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #e67e22;
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.1);
+}
+
+/* Champs en erreur */
+.form-group input.error,
+.form-group textarea.error,
+.form-group select.error {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+/* Messages d'erreur */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    display: block;
+    min-height: 1.2rem;
+}
+
+/* Messages de feedback */
+.form-feedback {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+/* Message de succès */
+.form-feedback.success {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Message d'erreur */
+.form-feedback.error {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* État de chargement */
+.form-feedback.loading {
+    display: block;
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* Bouton de soumission */
+.btn-submit {
+    padding: 1rem;
+    background: #e67e22;
+    color: white;
+    border: 2px solid #e67e22;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.btn-submit:hover {
+    background: white;
+    color: #e67e22;
+}
+
+.btn-submit:focus-visible {
+    outline: 2px solid #e67e22;
+    outline-offset: 2px;
+}
+
+/* ===========================
+   CONTENEUR DU FORMULAIRE
+   =========================== */
+
+.review-form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.review-form-container h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Formulaire */
+.review-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ligne du formulaire (pour les champs côte à côte) */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Groupe pleine largeur */
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Textarea */
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Select styling */
+.form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.25rem;
+    padding-right: 2.5rem;
+}
+
+/* ===========================
+   COMPTEUR DE CARACTÈRES
+   =========================== */
+
+.char-count {
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 0.25rem;
+    text-align: right;
+}
+
+/* ===========================
+   CONTENEUR DE LA LISTE DES AVIS
+   =========================== */
+
+.reviews-list-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.reviews-list-container h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* ===========================
+   LISTE DES AVIS
+   =========================== */
+
+.reviews-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Carte d'avis */
+.review-card {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #e67e22;
+}
+
+/* En-tête de l'avis */
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Auteur de l'avis */
+.review-author {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Localisation */
+.review-location {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Note/Étoiles */
+.review-rating {
+    font-size: 1.1rem;
+    color: #e67e22;
+}
+
+/* Date de l'avis */
+.review-date {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+/* Texte de l'avis */
+.review-text {
+    color: #333;
+    line-height: 1.6;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+/* ===========================
+   ÉTATS SPÉCIAUX
+   =========================== */
+
+/* Pas d'avis */
+.no-reviews {
+    text-align: center;
+    color: #999;
+    padding: 2rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+/* État de chargement */
+.loading {
+    text-align: center;
+    color: #999;
+    padding: 2rem;
+}
+
+/* ===========================
+   RESPONSIVE - Petit écran
+   =========================== */
+
+@media (max-width: 768px) {
+    /* Une colonne au lieu de deux */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Réduction du padding */
+    .review-form-container,
+    .reviews-list-container {
+        padding: 1.5rem;
+    }
+
+    /* Avis sur une colonne */
+    .review-header {
+        flex-direction: column;
+    }
+}

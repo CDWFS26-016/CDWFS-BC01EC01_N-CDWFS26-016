@@ -1,0 +1,68 @@
+/* ===========================
+   STYLES SPÉCIFIQUES À LA PAGE PRESTATION
+   Styles pour la table de tarifs
+   =========================== */
+
+/* Conteneur scrollable pour la table */
+.pricing-table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+/* Styles généraux de la table */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* En-tête du tableau */
+.pricing-table thead tr {
+    background: #2c3e50;
+    color: white;
+}
+
+.pricing-table thead th {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    font-weight: 600;
+}
+
+/* Lignes du tableau */
+.pricing-table tbody td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+/* Alternance des couleurs des lignes */
+.pricing-table tbody tr:nth-child(even) {
+    background: #f4f4f4;
+}
+
+/* Tarif en gras */
+.pricing-table td strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Note TVA */
+.pricing-note {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+    color: #8b5cf6;
+    font-size: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .pricing-table-container {
+        margin: 1.5rem 0;
+    }
+
+    .pricing-table thead th,
+    .pricing-table tbody td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+}

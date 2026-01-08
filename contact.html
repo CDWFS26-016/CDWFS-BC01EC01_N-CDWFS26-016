@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Magic Home Service pour vos demandes de devis et questions. Peinture, isolation, rénovation en Eure-et-Loir.">
+    <meta name="keywords" content="contact, devis gratuit, peinture, rénovation, isolation thermique, Eure-et-Loir, Magic Home Service">
+    <meta name="author" content="Magic Home Service">
+    
+    <!-- URL canonique pour éviter le contenu dupliqué -->
+    <link rel="canonical" href="https://devis-reno-concept.fr/contact.html" />
+    
+    <!-- Open Graph pour les réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devis-reno-concept.fr/contact.html">
+    <meta property="og:title" content="Nous Contacter | Magic Home Service">
+    <meta property="og:description" content="Demandez votre devis gratuit. Magic Home Service vous répond rapidement.">
+    <meta property="og:image" content="https://devis-reno-concept.fr/img/og-image.jpg">
+    <meta property="og:site_name" content="Magic Home Service">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://devis-reno-concept.fr/contact.html">
+    <meta name="twitter:title" content="Nous Contacter | Magic Home Service">
+    <meta name="twitter:description" content="Contactez MHS pour un devis gratuit ou toute question.">
+    <meta name="twitter:image" content="https://devis-reno-concept.fr/img/og-image.jpg">
+    
+    <!-- JSON-LD Schema pour localBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Magic Home Service",
+        "alternateName": "MHS",
+        "image": "https://devis-reno-concept.fr/img/logo.jpg",
+        "description": "Études-Conseils-Devis-Expertise. Expert en peinture intérieure, isolation thermique, rénovation et enduits.",
+        "telephone": "+33612345678",
+        "email": "contact@devis-reno-concept.fr",
+        "url": "https://devis-reno-concept.fr",
+        "sameAs": ["https://www.instagram.com/airless_painter/"],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Eure-et-Loir",
+            "addressRegion": "Centre-Val de Loire",
+            "addressCountry": "FR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "telephone": "+33612345678",
+            "email": "contact@devis-reno-concept.fr"
+        }
+    }
+    </script>
+    
+    <title>Nous Contacter | Magic Home Service</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- Web Component Header -->
+    <header-component></header-component>
+
+    <main id="main-content">
+        <!-- En-tête de la page -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Nous Contacter</h1>
+                <p>Magic Home Service - Études-Conseils-Devis-Expertise</p>
+            </div>
+        </section>
+
+        <!-- Section Formulaire de Contact -->
+        <section class="contact-form-section bg-light">
+            <div class="container">
+                <div class="contact-form-container">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <!-- Ligne 1: Email et Téléphone -->
+                        <div class="form-row full-width-percentage">
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="Votre email" autocomplete="email" maxlength="100">
+                                <span class="error-message" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Votre numéro" autocomplete="tel" maxlength="20">
+                                <span class="error-message" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <!-- Ligne 2: Nom et Sujet -->
+                        <div class="form-row full-width-percentage">
+                            <div class="form-group">
+                                <label for="name">Nom <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Votre nom" autocomplete="name" maxlength="50">
+                                <span class="error-message" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet <span class="required">*</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="devis">Demande de devis</option>
+                                    <option value="peinture">Peinture</option>
+                                    <option value="isolation">Isolation thermique</option>
+                                    <option value="ravalement">Ravalement</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                                <span class="error-message" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <!-- Textarea pour le message -->
+                        <div class="form-group full-width full-width-percentage">
+                            <label for="message">Votre message <span class="required">*</span></label>
+                            <textarea id="message" name="message" required placeholder="Décrivez votre projet en détail..." rows="6" maxlength="1000"></textarea>
+                            <span class="char-count">0/1000</span>
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <!-- Bouton d'envoi et zone de feedback -->
+                        <button type="submit" class="btn-submit">Envoyer mon message</button>
+                        <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Coordonnées -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Nos Coordonnées</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Zone d'intervention</h3>
+                        <p>Eure-et-Loir<br>Et tous les départements voisins</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Téléphone</h3>
+                        <p><a href="tel:+33612345678">+33 6 12 34 56 78</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p><a href="mailto:contact@devis-reno-concept.fr">contact@devis-reno-concept.fr</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📱 Instagram</h3>
+                        <p><a href="https://www.instagram.com/airless_painter/" target="_blank" rel="noopener noreferrer">@airless_painter</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Web Component Footer -->
+    <footer-component></footer-component>
+
+    <script src="js/web-components/header/header-component.js"></script>
+    <script src="js/web-components/footer/footer-component.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

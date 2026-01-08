@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avis clients Magic Home Service - Peinture, isolation, rénovation et enduits. Consultez les témoignages de nos clients satisfaits.">
+    <meta name="keywords" content="avis clients, témoignages, peinture, isolation thermique, rénovation, enduits, Magic Home Service">
+    <meta name="author" content="Magic Home Service">
+    
+    <!-- URL canonique pour éviter le contenu dupliqué -->
+    <link rel="canonical" href="https://devis-reno-concept.fr/avis.html" />
+    
+    <!-- Open Graph pour les réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devis-reno-concept.fr/avis.html">
+    <meta property="og:title" content="Avis Clients | Magic Home Service">
+    <meta property="og:description" content="Consultez les avis et témoignages de nos clients satisfaits. Partagez votre expérience avec nos services.">
+    <meta property="og:image" content="https://devis-reno-concept.fr/img/og-image.jpg">
+    <meta property="og:site_name" content="Magic Home Service">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://devis-reno-concept.fr/avis.html">
+    <meta name="twitter:title" content="Avis Clients | Magic Home Service">
+    <meta name="twitter:description" content="Témoignages et avis de nos clients. Donnez votre avis sur nos services.">
+    <meta name="twitter:image" content="https://devis-reno-concept.fr/img/og-image.jpg">
+    
+    <!-- JSON-LD Schema pour LocalBusiness avec Review aggregate rating -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Magic Home Service",
+        "alternateName": "MHS",
+        "image": "https://devis-reno-concept.fr/img/logo.jpg",
+        "description": "Études-Conseils-Devis-Expertise. Expert en peinture intérieure, isolation thermique, rénovation et enduits.",
+        "telephone": "+33612345678",
+        "email": "contact@devis-reno-concept.fr",
+        "url": "https://devis-reno-concept.fr",
+        "sameAs": ["https://www.instagram.com/airless_painter/"],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Eure-et-Loir",
+            "addressRegion": "Centre-Val de Loire",
+            "addressCountry": "FR"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "5"
+        }
+    }
+    </script>
+    
+    <title>Avis Clients | Magic Home Service</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- Web Component Header -->
+    <header-component></header-component>
+
+    <main id="main-content">
+        <!-- En-tête de la page -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Avis Clients</h1>
+                <p>Découvrez les témoignages et expériences de nos clients satisfaits</p>
+            </div>
+        </section>
+
+        <!-- Section Avis avec Web Component -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <!-- Web Component Review Manager -->
+                <review-manager data-file="js/json/avis.json"></review-manager>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-contact">
+            <div class="container">
+                <h2>Besoin d'un devis ?</h2>
+                <p>Contactez-nous pour discuter de votre projet. Magic Home Service vous propose des études et conseils gratuits.</p>
+                <a href="contact.html" class="btn-cta btn-large">Demander un Devis Gratuit</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Web Component Footer -->
+    <footer-component></footer-component>
+
+    <script src="js/web-components/header/header-component.js"></script>
+    <script src="js/web-components/footer/footer-component.js"></script>
+    <script src="js/avis-data.js"></script>
+    <script src="js/web-components/review/review-component.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
