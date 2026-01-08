@@ -18,31 +18,31 @@
 
 /* En-tête du tableau */
 .pricing-table thead tr {
-    background: #2c3e50;
+    background: var(--primary-color);
     color: white;
 }
 
 .pricing-table thead th {
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     font-weight: 600;
 }
 
 /* Lignes du tableau */
 .pricing-table tbody td {
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 
 /* Alternance des couleurs des lignes */
 .pricing-table tbody tr:nth-child(even) {
-    background: #f4f4f4;
+    background: var(--bg-light);
 }
 
 /* Tarif en gras */
 .pricing-table td strong {
     font-weight: 600;
-    color: #2c3e50;
+    color: var(--primary-color);
 }
 
 /* Note TVA */
